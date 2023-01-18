@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>hi</title>
+</head>
+<body>
+<p id="p1">JAVA</p>
+<input id ="t1" type ="text">ENTER NO.<br>
+<button id="b1">check number</button>
+<script>
+document.getElementById("b1").addEventListener("click",fun1);
+function fun1()
+{
+  var a1=parseInt(document.getElementById("t1").value)
+  if(a1%2==0)
+  {
+  document.getElementById("p1").innerHTML=a1+" is an even number";
+  }
+  else
+  {
+  document.getElementById("p1").innerHTML=a1+" is an odd number";
+  document.getElementById("t1").value=a1*2;
+  }
+}
+</script>
+</body>
+</html>
