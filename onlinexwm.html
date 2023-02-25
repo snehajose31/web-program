@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+var i=0;
+function exam()
+{
+ if(document.f1.n1[0].checked)
+ i=i+1;
+ if(document.f1.n2[2].checked)
+ i=i+1;
+ if(document.f1.n3[1].checked)
+ i=i+1;
+ if(document.f1.n4[0].checked)
+ i=i+1;
+ if(document.f1.n5[1].checked)
+ i=i+1;
+ alert ("your score"+i+"/5");
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<h1><u>exam</u></h1>
+<h2>5*5</h2>
+<input type="radio" id="num1" name="n1" value="25">25
+<input type="radio" id="num1" name="n1" value="5">5
+<input type="radio" id="num1" name="n1" value="10">10
+<h2>5-5</h2>
+<input type="radio" id="num2" name="n2" value="25">25
+<input type="radio" id="num2" name="n2" value="50">50
+<input type="radio" id="num2" name="n2" value="0">0
+<h2>10*5</h2>
+<input type="radio" id="num3" name="n3" value="25">25
+<input type="radio" id="num3" name="n3" value="5">50
+<input type="radio" id="num3" name="n3" value="10">10
+<h2>100-5</h2>
+<input type="radio" id="num4" name="n4" value="25">95
+<input type="radio" id="num4" name="n4" value="5">50
+<input type="radio" id="num4" name="n4" value="10">10
+<h2>100*5</h2>
+<input type="radio" id="num5" name="n5" value="25">25
+<input type="radio" id="num5" name="n5" value="5">500
+<input type="radio" id="num5" name="n5" value="10">1000
+<br><br><input type="submit" value="submit" onclick="exam()">
+</form>
+</body>
+</html>
+
