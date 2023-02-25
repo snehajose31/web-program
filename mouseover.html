@@ -1,0 +1,26 @@
+<html>
+<head><title>javas</title>
+</head>
+<body>
+<p id="p1">sanjo</p>
+<button id="b5">Change Image</button><br>
+<script>
+function changebackg()
+{
+document.body.style.backgroundColor="#00aaff"
+}
+document.getElementById("p1").addEventListener("mouseenter",changebackg)
+function changebackg1()
+{
+document.body.style.backgroundColor="red"
+}
+document.getElementById("p1").addEventListener("mouseout",changebackg1)
+function changeimg()
+{
+document.body.style.backgroundImage="url('space.jpg')"
+document.getElementById("p1").style.color="orange"
+}
+document.getElementById("b5").addEventListener("mouseenter",changeimg)
+</script>
+</body>
+</html>
